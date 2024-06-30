@@ -1,1 +1,1 @@
-{"interval": "", "assets": ["UPRO"], "strategy": []}
+{"interval": "1day", "assets": ["UPRO", "BIL"], "strategy": [{"type": "IF", "conditions": [{"type": "BINARY", "first": {"name": "STDEV", "args": {"ticker": "UPRO", "length": "30"}, "advanced": {}}, "second": {"name": "constant", "args": {"value": "2"}}, "comp": ">", "operator": ""}], "if_action": {"type": "ACTION", "steps": [{"action": "allocation"}]}, "else_action": {"type": "ACTION", "steps": []}}]}
